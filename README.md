@@ -15,7 +15,7 @@ The repo contains the following folders:
 * **Output:** This is where the output file will be saved once the main.ipynb file runs. 
 * main.pdf: This contains the description of underlying data sources used as well as the strategy used to produce all variables in the output file. 
 
-In addition to the following folders, the repo contains the following files: 
+In addition to the above folders, the repo contains the following files: 
 
 * **requirements.txt:** This lists the Python packages used by main.ipynb to produce the output file.
 * **manual.pdf:** This explains the underlying data sources and methods used to compute industry-level productivity.
