@@ -68,11 +68,6 @@ desktop.ini
 dist/
 build/
 
-# Notebook and data outputs (assumed generated)
-/Output/
-/Output/*
-main.pdf
-
 # Backup files
 *.bak
 *.tmp
