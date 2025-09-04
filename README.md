@@ -8,13 +8,18 @@ Details on the method for productivity measurement and the underlying data sourc
 
 ## Structure
 
-The repo contains the following files:
+The repo contains the following folders:
 
 * **Input:** This contains the 3 underlying data files needed to produce industry-level productivity measures.
 * **Notebooks:** This contains the main.ipynb file which, after running, takes the input data files and produces the output file which contains the productivity measurements.
 * **Output:** This is where the output file will be saved once the main.ipynb file runs. 
 * main.pdf: This contains the description of underlying data sources used as well as the strategy used to produce all variables in the output file. 
-* requirements.txt: This lists the Python packages used by main.ipynb to produce the output file. 
+
+In addition to the following folders, the repo contains the following files: 
+
+* **requirements.txt:** This lists the Python packages used by main.ipynb to produce the output file.
+* **manual.pdf:** This explains the underlying data sources and methods used to compute industry-level productivity.
+* **LICENSE:** This governs the rules of use for the output of this project.
 
 
 ## Instructions
