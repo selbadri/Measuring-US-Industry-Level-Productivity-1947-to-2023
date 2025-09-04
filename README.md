@@ -23,7 +23,7 @@ After downloading the repo from GitHub, the user should save the repo in a locat
 
 A new virtual environment must be created. The purpose of this virtual environment is to ensure that the user has all the necessary Python packages  to replicate the results. These packages are listed in requirements.txt file found in the repo. The environment can be deleted once the user is finished replicating the results.
 
-To begin, open the repo on VS Code and ensure that the directory reflects the path of the saved repo. Then, choose one of two options to set up the virtual environment:
+To begin, open a terminal at the repository root. If you are using VS Code, use the built-in terminal so that the terminal starts in the repository root. Then, choose one of two options to set up the virtual environment:
 
 Option 1 -- VENV Environment.
 
@@ -32,9 +32,9 @@ Type in the following in the terminal to i) generate a new VENV environment, ii)
 ```
 Python -m venv venv
 
-Source venv/bin/active			**NOTE: Only if LINUX/MAC user
+Source venv/bin/active			  **NOTE: Only if LINUX/MAC user
 
-.\venv\Scripts\activate                     **NOTE: Only if WINDOWS user
+.\venv\Scripts\activate           **NOTE: Only if WINDOWS user
 
 pip install -r requirements.txt
 ```
@@ -51,9 +51,9 @@ conda create -n replication-env python=3.9  **NOTE: Replace 3.9 with the user's 
 
 conda activate replication-env
 
-pip install -requirements.txt
+pip install -r requirements.txt
 ```
-
+If you are using VS Code, then select the kernel that is produced by the Conda environment (e.g., replication-env)
 
 
 
