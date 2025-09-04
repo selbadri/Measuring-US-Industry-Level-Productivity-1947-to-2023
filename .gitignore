@@ -1,0 +1,85 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+*.egg
+*.whl
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# MyPy / lint caches
+.mypy_cache/
+.cache/
+
+# IPython / Jupyter
+.ipynb_checkpoints
+# keep .ipynb files tracked, but ignore checkpoints
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.ropeproject/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Windows temporary Office files
+~$*
+
+# Logs and runtime files
+*.log
+*.pid
+*.seed
+*.sqlite3
+*.db
+
+# Compiled extensions
+*.so
+*.pyd
+*.dll
+
+# Project artifacts
+dist/
+build/
+
+# Notebook and data outputs (assumed generated)
+/Output/
+/Output/*
+main.pdf
+
+# Backup files
+*.bak
+*.tmp
+*.swp
+
+# Spyder project
+.spyproject/
+
+# keep these files tracked if you intentionally version them:
+# - anything under /Input/ (raw data) and /Notebooks/ (analysis notebooks)
