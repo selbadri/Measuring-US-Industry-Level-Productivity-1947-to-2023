@@ -16,15 +16,15 @@ This project is open source and available under the MIT License. See the [LICENS
 
 The repo contains the following folders:
 
-* **Input:** This contains the 3 underlying data files needed to produce industry-level productivity measures.
-* **Notebooks:** This contains the main.ipynb file which, after running, takes the input data files and produces the output file which contains the productivity measurements.
-* **Output:** This is where the output file [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) will be saved once the main.ipynb file runs. 
+- **[Input/](Input/):** This contains the 3 underlying data files needed to produce industry-level productivity measures.
+- **[Notebooks/](Notebooks/):** This contains the [main.ipynb](Notebooks/main.ipynb) file which, after running, takes the input data files and produces the output file which contains the productivity measurements.
+- **[Output/](Output/):** This is where the output file [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) will be saved once the main.ipynb file runs.
 
-In addition to the above folders, the repo contains the following files: 
+In addition to the above folders, the repo contains the following files:
 
-* **requirements.txt:** This lists the Python packages used by main.ipynb to produce the output file.
-* **manual.pdf:** This explains the underlying data sources and methods used to compute industry-level productivity.
-* **LICENSE:** This governs the rules of use for the data and codes in this repo.
+- **[requirements.txt](requirements.txt):** This lists the Python packages used by main.ipynb to produce the output file.
+- **[manual.pdf](manual.pdf):** This explains the underlying data sources and methods used to compute industry-level productivity.
+- **[LICENSE](LICENSE):** This governs the rules of use for the data and codes in this repo.
 
 
 ## Instructions
