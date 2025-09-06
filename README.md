@@ -23,7 +23,7 @@ The repo contains the following folders:
 - **[Notebooks/](Notebooks/):** This contains the [main.ipynb](Notebooks/main.ipynb) file which, after running, takes the input data files and produces the output file which contains the productivity measurements.
 - **[Output/](Output/):** This is where the output file [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) will be saved once the main.ipynb file runs.
 
-In addition to the above folders, the repo contains the following files:
+Additional files include:
 
 - **[requirements.txt](requirements.txt):** This lists the Python packages used by main.ipynb to produce the output file.
 - **[manual.pdf](manual.pdf):** This explains the underlying data sources and methods used to compute industry-level productivity.
