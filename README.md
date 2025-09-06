@@ -1,6 +1,6 @@
 ## Description
 
-We provide a dataset with information on US industry-level production accounts and productivity measures -- namely labor productivity and total factor productivity (TFP) -- for 63 industries between 1963 and 2023 and 44 industries between 1947 and 2023. To the best of our knowledge, our dataset offers productivity measures with the most extensive temporal coverage and the highest degree of industry disaggregation for the entire economy currently available for the US. 
+We provide a dataset with information on US industry-level production accounts and productivity measures – namely labor productivity and total factor productivity (TFP) – for 63 industries between 1963 and 2023 and 44 industries between 1947 and 2023. To the best of our knowledge, our dataset offers productivity measures with the most extensive temporal coverage and the highest degree of industry disaggregation for the entire economy currently available for the US. 
 
 Users may download the final dataset [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) from the **Output** folder. Alternatively, if users intend to introduce changes, updates or look deeper into the methodology, we also provide a code. This code takes as input the underlying historical datasets and computes the final dataset in a manner consistent with the methodology outlined in the documentation (see [manual.pdf](manual.pdf)). The remainder of this README file explains the structure of the repo and provides instructions on how users can set up a virtual environment to replicate the results.
 
@@ -17,6 +17,9 @@ This project is open source and available under the MIT License. See the [LICENS
 The repo contains the following folders:
 
 - **[Input/](Input/):** This contains the 3 underlying data files needed to produce industry-level productivity measures.
+	- [prod_accounts_1947to2014.xlsx](Input/prod_accounts_1947to2014.xlsx)
+	- [prod_accounts_1947to2016.xlsx](Input/prod_accounts_1947to2016.xlsx)
+	- [prod_accounts_1997to2023.xlsx](Input/prod_accounts_1997to2023.xlsx)
 - **[Notebooks/](Notebooks/):** This contains the [main.ipynb](Notebooks/main.ipynb) file which, after running, takes the input data files and produces the output file which contains the productivity measurements.
 - **[Output/](Output/):** This is where the output file [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) will be saved once the main.ipynb file runs.
 
@@ -31,7 +34,7 @@ In addition to the above folders, the repo contains the following files:
 
 After downloading the repo from GitHub, the user should save the repo in a location of their preference. The instructions below assume that the user has installed Python in their machine.
 
-A new virtual environment must be created. The purpose of this virtual environment is to ensure that the user has all the necessary Python packages  to replicate the results. These packages are listed in requirements.txt file found in the repo. The environment can be deleted once the user is finished replicating the results.
+A new virtual environment must be created. The purpose of this virtual environment is to ensure that the user has all the necessary Python packages  to replicate the results. These packages are listed in [requirements.txt](requirements.txt) file found in the repo. The environment can be deleted once the user is finished replicating the results.
 
 To begin, open a terminal at the repository root. If you are using VS Code, use the built-in terminal so that the terminal starts in the repository root. Then, choose one of two options to set up the virtual environment:
 
