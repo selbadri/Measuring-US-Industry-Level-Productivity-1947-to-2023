@@ -1,10 +1,16 @@
 ## Description
 
-This README file is intended to give the user instructions on how to replicate the output from the project "Measuring US Productivity Between 1947 and 2023" produced by Selim Elbadri & Juan I. Vizcaino.
+Our dataset extends US industry-level production accounts in Jorgenson et al. (2017) to cover the period between 1947 and 2023 and, using the methodology in Jorgenson et al (2012), adds measures of industry-level labor productivity and total factor productivity (TFP) over the corresponding period. We cover 63 industries between 1963 and 2023 and 44 industries between 1947 and 2023. To the best of our knowledge, our dataset offers productivity measures with the most extensive temporal coverage and the highest degree of industry disaggregation for the entire economy currently available for the US. 
 
+Users may download the final dataset [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) from the **Output** folder. Alternatively, if users intend to introduce changes, updates or look deeper into the methodology, we also provide a code. This code takes as input the underlying historical datasets and computes the final dataset in a manner consistent with the methodology outlined in the documentation (see [manual.pdf](manual.pdf)). The remainder of this README file explains the structure of the repo and provides instructions on how users can set-up a virtual environment to replicate the results.
 
-Details on the method for productivity measurement and the underlying data sources can be found in the accompanying pdf document.
+## Attribution & License
 
+The data and code are available for public use provided that they are appropriately cited:
+
+XXXXXXXXXXX
+
+This project is open source and available under the MIT License. See the [LICENSE](LICENSE) file for the full text.
 
 ## Structure
 
@@ -12,14 +18,13 @@ The repo contains the following folders:
 
 * **Input:** This contains the 3 underlying data files needed to produce industry-level productivity measures.
 * **Notebooks:** This contains the main.ipynb file which, after running, takes the input data files and produces the output file which contains the productivity measurements.
-* **Output:** This is where the output file will be saved once the main.ipynb file runs. 
-* main.pdf: This contains the description of underlying data sources used as well as the strategy used to produce all variables in the output file. 
+* **Output:** This is where the output file [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) will be saved once the main.ipynb file runs. 
 
 In addition to the above folders, the repo contains the following files: 
 
 * **requirements.txt:** This lists the Python packages used by main.ipynb to produce the output file.
 * **manual.pdf:** This explains the underlying data sources and methods used to compute industry-level productivity.
-* **LICENSE:** This governs the rules of use for the output of this project.
+* **LICENSE:** This governs the rules of use for the data and codes in this repo.
 
 
 ## Instructions
