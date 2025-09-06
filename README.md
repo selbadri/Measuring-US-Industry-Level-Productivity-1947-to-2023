@@ -10,7 +10,7 @@ The data and code are available for public use provided that they are appropriat
 
 XXXXXXXXXXX
 
-This project is open source and available under the MIT License. See the [LICENSE](LICENSE) file for the full text.
+This repo is open source and available under the MIT License. See the [LICENSE](LICENSE) file for the full text.
 
 ## Structure
 
