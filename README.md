@@ -16,11 +16,11 @@ This project is open source and available under the MIT License. See the [LICENS
 
 The repo contains the following folders:
 
-- **[Input/](Input/):** This contains the 3 underlying data files needed to produce industry-level productivity measures.
-	- [prod_accounts_1947to2014.xlsx](Input/prod_accounts_1947to2014.xlsx)
+- **[Input/](Input/):** This contains the 3 underlying data files needed to produce industry-level productivity measures. See [manual.pdf](manual.pdf) for a full description and source of each dataset. 
+	- [prod_accounts_1947to2014.xlsx](Input/prod_accounts_1947to2014.xlsx) 
 	- [prod_accounts_1947to2016.xlsx](Input/prod_accounts_1947to2016.xlsx)
 	- [prod_accounts_1997to2023.xlsx](Input/prod_accounts_1997to2023.xlsx)
-- **[Notebooks/](Notebooks/):** This contains the [main.ipynb](Notebooks/main.ipynb) file which, after running, takes the input data files and produces the main dataset containing industry-level production accounts and productivity measures.
+- **[Notebooks/](Notebooks/):** This contains the [main.ipynb](Notebooks/main.ipynb) file which, after running, takes the input data files and produces our dataset containing industry-level production accounts and productivity measures.
 - **[Output/](Output/):** This is where the output file [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) will be saved once the main.ipynb file runs.
 
 Additional files include:
