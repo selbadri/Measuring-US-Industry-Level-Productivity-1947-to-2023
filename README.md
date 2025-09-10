@@ -1,6 +1,6 @@
 ## Description
 
-We combine data from US KLEMS, March 2017 Release (see Jorgenson et al. (2017) [^1]), with (see Eldridge et al. (2020) [^2]) and (see Gerner et al. (2025) [^3]) to extend US industry-level production accounts up until 2023. Additionally, we apply the methodology in Jorgenson et al. (2007) to produce industry-level measures of labor productivity and total factor productivity (TFP) for the corresponding time period. Our dataset covers 63 industries between 1963 and 2023 and 44 industries between 1947 and 2023. To the best of our knowledge, our dataset offers productivity measures with the most extensive temporal coverage and the highest degree of industry disaggregation for the entire US economy currently available. 
+We combine data from US KLEMS, March 2017 Release (see Jorgenson et al. (2017) [^1]), with BEA-BLS Integrated Industry-Level Production Account for 1947–2016 (see Eldridge et al. (2020) [^2]), and BEA-BLS Integrated Industry-Level Production Account for 1997-2023 (see Gerner et al. (2025) [^3]) to produce industry-level measures of Gross Output (GO), Value Added (VA), Capital (CAP), Labor (LAB), and Intermediate Inputs (II), in Nominal and Real terms. We also provide Quantity Indices for GO, VA, CAP, LAB, and II, and utilize these indices to compute measures of  Total Labor Productivity (LP) and Total Factor Productivity (TFP) for the corresponding time period, following the methodology in US KLEMS, April 2013 Release (see Jorgenson et al. (2012) [^5]). Our data covers the 1997-2023 period and is updated to reflect the annual update to the input-output accounts released on September 26, 2024 available here: https://apps.bea.gov/iTable/?reqid=150&step=2&isuri=1&categories=gdpxind
 
 Users may download the final dataset [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) from the [Output/](Output/) folder. Alternatively, if users intend to introduce changes, updates or look deeper into the methodology, we also provide a code. This code takes as input the underlying historical datasets and computes the final dataset using the methodology outlined in the documentation (see [manual.pdf](manual.pdf)). The remainder of this README file explains attribution & license, the structure of the repo and offers instructions on how users can set up a virtual environment to replicate the results.
 
@@ -77,6 +77,7 @@ If you are using VS Code, then select the kernel that is produced by the Conda e
 
 [^4]: Jorgenson, D. W., Ho, M. S., & Samuels, J. D. (2017). Educational attainment and the revival of US economic growth. In Education, Skills, and Technical Change: Implications for Future US GDP Growth (pp. 23–60). University of Chicago Press.
 
+[^5]: Jorgenson, D. W., Ho, M. S., & Samuels, J. D. (2012) “A Prototype Industry‐Level Production Account for the United States, 1947‐2010,” Second World KLEMS Conference, Harvard University, August 9, 2012.
 
 
 
