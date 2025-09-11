@@ -1,8 +1,8 @@
 ## Description
 
-We combine data from Jorgenson et al. (2017), Eldridge et al. (2020) and Gerner et al. (2025) to extend US industry-level production accounts up until 2023. Additionally, we apply the methodology in Jorgenson et al. (2007) to produce industry-level measures of labor productivity and total factor productivity (TFP) for the corresponding time period. Our dataset covers 63 industries between 1963 and 2023 and 44 industries between 1947 and 2023. To the best of our knowledge, our dataset offers productivity measures with the most extensive temporal coverage and the highest degree of industry disaggregation for the entire US economy currently available. 
+We combine data from US KLEMS, March 2017 Release (see Jorgenson et al. (2017) [^1]), with BEA-BLS Integrated Industry-Level Production Account for 1947–2016 (see Eldridge et al. (2020) [^2]), and BEA-BLS Integrated Industry-Level Production Account for 1997-2023 (see Gerner et al. (2025) [^3]) to produce industry-level measures of Gross Output (GO), Value Added (VA), Capital (CAP), Labor (LAB), and Intermediate Inputs (II), in Nominal and Real terms. We also provide Quantity Indices for GO, VA, CAP, LAB, and II, and utilize these indices to compute measures of  Total Labor Productivity (LP) and Total Factor Productivity (TFP) for the corresponding time period, following the methodology in US KLEMS, April 2013 Release (see Jorgenson et al. (2012) [^5]). Our data covers the 1997-2023 period and reflects the annual update to the [Industry Economic Accounts Data](https://www.bea.gov/industry/input-output-accounts-data). The data can be updated annually to reflect the latest release from the BEA.
 
-Users may download the final dataset [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) from the [Output/](Output/) folder. Alternatively, if users intend to introduce changes, updates or look deeper into the methodology, we also provide a code. This code takes as input the underlying historical datasets and computes the final dataset using the methodology outlined in the documentation (see [manual.pdf](manual.pdf)). The remainder of this README file explains attribution & license, the structure of the repo and offers instructions on how users can set up a virtual environment to replicate the results.
+Users may download the final dataset [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) from the [Output/](Output/) folder. Alternatively, if users intend to introduce changes, update the data themselves, or look deeper into the methodology, we also provide Python code in the form of a Jupyter Notebook showcasing our methodology. This code takes as input the underlying historical datasets and computes the final dataset using the methodology outlined in the documentation (see [manual.pdf](manual.pdf)). The remainder of this README file explains attribution & license, the structure of the repo and offers instructions on how users can set up a virtual environment to replicate the results.
 
 ## Attribution & License
 
@@ -69,13 +69,15 @@ If you are using VS Code, then select the kernel that is produced by the Conda e
 
 ## References
 
-- Eldridge, L. P., Garner, C., Howells, T. F., Moyer, B. C., Russell, M., Samuels, J. D., Strassner, E. H., & Wasshausen, D. B. (2020). Toward a BEA–BLS integrated industry‑level production account for 1947–2016. In Measuring economic growth and productivity (pp. 221–249). Elsevier.
+[^1]: Jorgenson, D. W., Ho, M. S., Samuels, J. D., & Stiroh, K. J. (2007). Industry origins of the American productivity resurgence. Economic Systems Research, 19(3), 229–252.
 
-- Garner, C., Harper, J., Russell, M., & Samuels, J. (2025). Integrated BEA–BLS industry‑level production account, 1997–2023: The sources of U.S. economic growth in the aftermath of the COVID‑19 recession (Technical report). Bureau of Economic Analysis & Bureau of Labor Statistics.
+[^2]: Eldridge, L. P., Garner, C., Howells, T. F., Moyer, B. C., Russell, M., Samuels, J. D., Strassner, E. H., & Wasshausen, D. B. (2020). Toward a BEA–BLS integrated industry‑level production account for 1947–2016. In Measuring economic growth and productivity (pp. 221–249). Elsevier.
 
-- Jorgenson, D. W., Ho, M. S., & Samuels, J. D. (2017). Educational attainment and the revival of US economic growth. In Education, Skills, and Technical Change: Implications for Future US GDP Growth (pp. 23–60). University of Chicago Press.
+[^3]: Garner, C., Harper, J., Russell, M., & Samuels, J. (2025). Integrated BEA–BLS industry‑level production account, 1997–2023: The sources of U.S. economic growth in the aftermath of the COVID‑19 recession (Technical report). Bureau of Economic Analysis & Bureau of Labor Statistics.
 
-- Jorgenson, D. W., Ho, M. S., Samuels, J. D., & Stiroh, K. J. (2007). Industry origins of the American productivity resurgence. Economic Systems Research, 19(3), 229–252.
+[^4]: Jorgenson, D. W., Ho, M. S., & Samuels, J. D. (2017). Educational attainment and the revival of US economic growth. In Education, Skills, and Technical Change: Implications for Future US GDP Growth (pp. 23–60). University of Chicago Press.
+
+[^5]: Jorgenson, D. W., Ho, M. S., & Samuels, J. D. (2012) “A Prototype Industry‐Level Production Account for the United States, 1947‐2010,” Second World KLEMS Conference, Harvard University, August 9, 2012.
 
 
 
