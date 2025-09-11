@@ -17,9 +17,9 @@ This repo is open source and available under the MIT License. See the [LICENSE](
 The repo contains the following folders:
 
 - **[Input/](Input/):** This contains the 3 underlying data files needed to produce industry-level productivity measures. See [manual.pdf](manual.pdf) for a full description and source of each dataset. 
-	- [usa_wk_mar_2017.xlsx](Input/usa_wk_mar_2017.xlsx). This is the dataset by Jorgenson et al. (2017). 
-	- [industry-production-account-experimental.xlsx](Input/industry-production-account-experimental.xlsx). This is the dataset by Eldridge et al. (2020). 
-	- [industry-production-account-capital.xlsx](Input/industry-production-account-capital.xlsx). This is the dataset by Gerner et al. (2025).
+	- [usa_wk_mar_2017.xlsx](Input/usa_wk_mar_2017.xlsx). This is US KLEMS, March 2017 Release (see Jorgenson et al. (2017)[^1]). 
+	- [industry-production-account-experimental.xlsx](Input/industry-production-account-experimental.xlsx). This is BEA-BLS Integrated Industry-Level Production Account for 1947-2016 (see Eldridge et al. (2020)[^2]). 
+	- [industry-production-account-capital.xlsx](Input/industry-production-account-capital.xlsx). This is BEA-BLS Integrated Industry-Level Production Account for 1947-2016 (see Gerner et al. (2025)[^3]).
 - **[Notebooks/](Notebooks/):** This contains the [main.ipynb](Notebooks/main.ipynb) file which, after running, takes the input data files and produces our dataset containing industry-level production accounts and productivity measures.
 - **[Output/](Output/):** This is where the output file [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) will be saved once the main.ipynb file runs.
 
