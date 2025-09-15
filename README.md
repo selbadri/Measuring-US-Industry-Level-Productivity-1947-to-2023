@@ -8,7 +8,7 @@ Users may download the final dataset [EV_production_accounts_1947to2023.xlsx](Ou
 
 The data and code are available for public use provided that they are appropriately cited:
 
-Elbadri, Selim and Juan I. Vizcaino (2025). "Measuring US Industry-Level Productivity Between 1947-2023" [Data set]. DOI: XXXXXXXX
+Elbadri, Selim and Juan I. Vizcaino (2025). "Measuring US Industry-Level Productivity Between 1947-2023" [Data set].
 
 This repo is open source and available under the MIT License. See the [LICENSE](LICENSE) file for the full text.
 
