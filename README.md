@@ -80,6 +80,6 @@ If you are using VS Code, then select the kernel that is produced by the Conda e
 
 [^3]: See: *Garner, C., Harper, J., Russell, M., & Samuels, J. (2025). Integrated BEA–BLS industry‑level production account, 1997–2023: The sources of U.S. economic growth in the aftermath of the COVID‑19 recession (Technical report). Bureau of Economic Analysis & Bureau of Labor Statistics.*
 
-[^4]: See *Jorgenson, D. W., Ho, M. S., & Samuels, J. D. (2017). Educational attainment and the revival of US economic growth. In Education, Skills, and Technical Change: Implications for Future US GDP Growth (pp. 23–60). University of Chicago Press.*
+[^4]: See: *Jorgenson, D. W., Ho, M. S., & Samuels, J. D. (2017). Educational attainment and the revival of US economic growth. In Education, Skills, and Technical Change: Implications for Future US GDP Growth (pp. 23–60). University of Chicago Press.*
 
-[^5]: See *Jorgenson, D. W., Ho, M. S., & Samuels, J. D. (2012) “A Prototype Industry‐Level Production Account for the United States, 1947‐2010,” Second World KLEMS Conference, Harvard University, August 9, 2012.*
+[^5]: See: *Jorgenson, D. W., Ho, M. S., & Samuels, J. D. (2012) “A Prototype Industry‐Level Production Account for the United States, 1947‐2010,” Second World KLEMS Conference, Harvard University, August 9, 2012.*
