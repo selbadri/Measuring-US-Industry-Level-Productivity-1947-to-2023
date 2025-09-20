@@ -11,7 +11,7 @@ Users may download the final dataset [EV_production_accounts_1947to2023.xlsx](Ou
 
 The data and code are available for public use provided that they are appropriately cited:
 
-Elbadri, Selim and Juan I. Vizcaino (2025). *"Measuring US Industry-Level Productivity Between 1947 and 2023"* [Data set]. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17162911.svg)](https://doi.org/10.5281/zenodo.17162911)
+Elbadri, Selim and Juan I. Vizcaino (2025). *"Measuring US Industry-Level Productivity Between 1947 and 2023"* [Data set]. 
 
 This repo is open source and available under the MIT License. See the [LICENSE](LICENSE) file for the full text.
 
@@ -59,17 +59,18 @@ If you are using VS Code, then select the kernel that is produced by the virtual
 
 **Option 2** `-- CONDA Environment.`
 
-For Option 2, ensure that Anaconda is downloaded and installed first. Then, type in the following in the terminal to i) generate a new CONDA environment, ii) activate the environment, and iii) download necessary Python packages in the new environment:
-
+For Option 2, ensure that Anaconda is downloaded and installed first. Then, open the **Anaconda Prompt** and type the following commands to i) navigate to the project folder, ii) create a new Conda environment, iii) activate the environment, and iv) install the necessary Python packages:
 
 ```
-conda create -n replication-env python=3.9  **NOTE: Replace 3.9 with the user's Python version.
+cd path\to\your\project   # Replace with the actual path to your project folder
+
+conda create -n replication-env python=3.9  # Replace 3.9 with your preferred Python version
 
 conda activate replication-env
 
 pip install -r requirements.txt
 ```
-If you are using VS Code, then select the kernel that is produced by the Conda environment (e.g., replication-env)
+If you are using VS Code, then select the kernel that is produced by the Conda environment (e.g., replication-env).
 
 ---
 ## References
