@@ -2,85 +2,128 @@
 
 ## Description
 
-We combine data from US KLEMS, March 2017 Release, [^1] with BEA-BLS Integrated Industry-Level Production Account for 1947–2016, [^2] and BEA-BLS Integrated Industry-Level Production Account [^3] for 44 industries between 1947-2023 and 63 industries between 1963-2023 to produce industry-level measures of Gross Output (**GO**), Value Added (**VA**), Capital (**CAP**), Labor (**LAB**), and Intermediate Inputs (**II**), in Nominal and Real terms. We also provide Tornqvist Quantity Indices for **GO**, **VA**, **CAP**, **LAB**, and **II**, and compute measures of Labor Productivity (**LP**) and Total Factor Productivity (**TFP**) for the corresponding time periods, following the methodology in US KLEMS, April 2013 Release [^5]. Our data reflects the latest version of the [Industry Economic Accounts Data](https://www.bea.gov/industry/input-output-accounts-data) and can be updated annually to reflect the latest release from the BEA.
+We combine data from **US KLEMS (March 2017 Release)** [^1], the **BEA–BLS Integrated Industry-Level Production Accounts** for 1947–2016 [^2], and the **BEA–BLS Integrated Industry-Level Production Accounts** for 44 industries (1947–2023) and 63 industries (1963–2023) [^3]. From these sources, we construct industry-level measures of **Gross Output (GO)**, **Value Added (VA)**, **Capital (CAP)**, **Labor (LAB)**, and **Intermediate Inputs (II)**, in both nominal and real terms. We also provide quantity indices for **GO**, **VA**, **CAP**, **LAB**, and **II**, and compute measures of **Labor Productivity (LP)** and **Total Factor Productivity (TFP)** for the corresponding time periods, following the methodology in *US KLEMS, April 2013 Release* [^5].  
 
-Users may download the final dataset [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) from the [Output/](Output/) folder. Alternatively, if users intend to introduce changes, update the data themselves, or look deeper into the methodology, we also provide Python code in the form of a Jupyter Notebook showcasing our methodology. This code takes as input the underlying historical datasets and computes the final dataset using the methodology outlined in the documentation (see [manual.pdf](manual.pdf)). The remainder of this README file explains attribution & license, the structure of the repo and offers instructions on how users can set up a virtual environment to replicate the results.
+Our dataset reflects the latest version of the [Industry Economic Accounts Data](https://www.bea.gov/industry/input-output-accounts-data) and can be updated annually to incorporate new BEA releases.
+
+Users may download the final dataset, [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx), from the [Output/](Output/) folder. Alternatively, for users who wish to modify or update the data, or explore the methodology in more depth, we provide Python code in the form of a Jupyter Notebook. The notebook takes the underlying historical datasets as input and reproduces the final dataset using the documented methodology (see [manual.pdf](manual.pdf)).  
+
+The remainder of this README explains:  
+- Attribution & licensing  
+- The structure of the repository  
+- Instructions for setting up a virtual environment to replicate the results  
 
 ---
 ## Attribution & License
 
-The data and code are available for public use provided that they are appropriately cited:
+The data and code are available for public use, provided that they are appropriately cited:
 
-Elbadri, Selim and Juan I. Vizcaino (2025). *"Measuring US Industry-Level Productivity Between 1947 and 2023"* [Data set]. 
+Elbadri, Selim, and Juan I. Vizcaino (2025). *Measuring US Industry-Level Productivity Between 1947 and 2023* [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.17163103](https://doi.org/10.5281/zenodo.17163103)  
 
-This repo is open source and available under the MIT License. See the [LICENSE](LICENSE) file for the full text.
+This repository is open source and distributed under the MIT License. See the [LICENSE](LICENSE) file for the full text.
 
 ---
-## Structure
+## Repository Structure
 
-The repo contains the following folders:
+The repository contains the following folders:
 
-- **[Input/](Input/):** This contains the 3 underlying data files needed to produce industry-level productivity measures. See [manual.pdf](manual.pdf) for a full description and source of each dataset. 
-	- [usa_wk_mar_2017.xlsx](Input/usa_wk_mar_2017.xlsx). This is US KLEMS, March 2017 Release (see Jorgenson et al. (2017)[^1]). 
-	- [industry-production-account-experimental.xlsx](Input/industry-production-account-experimental.xlsx). This is BEA-BLS Integrated Industry-Level Production Account for 1947-2016 (see Eldridge et al. (2020)[^2]). 
-	- [industry-production-account-capital.xlsx](Input/industry-production-account-capital.xlsx). This is BEA-BLS Integrated Industry-Level Production Account for 1947-2016 (see Gerner et al. (2025)[^3]).
-- **[Notebooks/](Notebooks/):** This contains the [main.ipynb](Notebooks/main.ipynb) file which, after running, takes the input data files and produces our dataset containing industry-level production accounts and productivity measures.
-- **[Output/](Output/):** This is where the output file [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) will be saved once the main.ipynb file runs.
+- **[Input/](Input/):** Contains the three underlying data files needed to produce industry-level productivity measures (see [manual.pdf](manual.pdf) for full details and sources):
+  - [usa_wk_mar_2017.xlsx](Input/usa_wk_mar_2017.xlsx): US KLEMS, March 2017 Release (see Jorgenson et al. (2017)[^1]).  
+  - [industry-production-account-experimental.xlsx](Input/industry-production-account-experimental.xlsx): BEA–BLS Integrated Industry-Level Production Account for 1947–2016 (see Eldridge et al. (2020)[^2]).  
+  - [industry-production-account-capital.xlsx](Input/industry-production-account-capital.xlsx): BEA–BLS Integrated Industry-Level Production Account (see Gerner et al. (2025)[^3]).  
+
+- **[Notebooks/](Notebooks/):** Contains [main.ipynb](Notebooks/main.ipynb), which processes the input data files to generate the dataset with industry-level production accounts and productivity measures.  
+
+- **[Output/](Output/):** Contains the output file [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx), produced after running `main.ipynb`.  
 
 Additional files include:
 
-- **[requirements.txt](requirements.txt):** This lists the Python packages used by main.ipynb to produce the output file.
-- **[manual.pdf](manual.pdf):** This explains the underlying data sources and methods, following Jorgenson et al. (2007), used to compute industry-level productivity.
-- **[LICENSE](LICENSE):** This governs the rules of use for the data and codes in this repo.
+- **[requirements.txt](requirements.txt):** Lists the Python packages required to run `main.ipynb` and reproduce the output.  
+- **[manual.pdf](manual.pdf):** Documents the underlying data sources and methodology (following Jorgenson et al. (2007)) used to compute industry-level productivity.  
+- **[LICENSE](LICENSE):** Specifies the terms of use for the data and code in this repository.  
 
 ---
 ## Instructions
 
-After downloading the repo from GitHub, the user should save the repo in a location of their preference. The instructions below assume that the user has installed Python in their machine.
+After downloading the repository from GitHub, save it in a location of your choice. These instructions assume that Python is already installed on your machine.
 
-A new virtual environment must be created. The purpose of this virtual environment is to ensure that the user has all the necessary Python packages  to replicate the results. These packages are listed in [requirements.txt](requirements.txt) file found in the repo. The environment can be deleted once the user is finished replicating the results.
+To replicate the results, you must create a new **virtual environment**. This ensures that all necessary Python packages (listed in [requirements.txt](requirements.txt)) are installed without interfering with your system-wide configuration. The environment can be deleted once replication is complete.
 
-To begin, open a terminal at the repository root. If you are using VS Code, use the built-in terminal so that the terminal starts in the repository root. Then, choose one of two options to set up the virtual environment:
+Open a terminal at the repository root.  
+- If you are using **VS Code**, use the built-in terminal so that it starts in the repository root.  
+- After creating the environment, make sure to select the corresponding kernel in VS Code.  
 
-**Option 1** `-- VENV Environment.`
+You can set up the environment in one of two ways:
 
-Type in the following in the terminal to i) generate a new VENV environment, ii) activate the environment and iii) download necessary Python packages in the new environment:
+---
 
-```
-Python -m venv venv
+### Option 1: VENV Environment
 
-Source venv/bin/active			  **NOTE: Only if LINUX/MAC user
+Run the following commands in the terminal:
 
-.\venv\Scripts\activate           **NOTE: Only if WINDOWS user
+```bash
+python -m venv venv
 
+# Activate the environment
+source venv/bin/activate        # Linux/Mac
+.\venv\Scripts\activate         # Windows
+
+# Install required packages
 pip install -r requirements.txt
 ```
-If you are using VS Code, then select the kernel that is produced by the virtual environment (.venv)
 
-**Option 2** `-- CONDA Environment.`
+### Option 2: Conda Environment
 
-For Option 2, ensure that Anaconda is downloaded and installed first. Then, open the **Anaconda Prompt** and type the following commands to i) navigate to the project folder, ii) create a new Conda environment, iii) activate the environment, and iv) install the necessary Python packages:
+If you prefer to use Conda, first ensure that **Anaconda** (or Miniconda) is installed. Then, open the **Anaconda Prompt** and run the following commands to:  
+1. Navigate to the project folder  
+2. Create a new Conda environment  
+3. Activate the environment  
+4. Install the required Python packages  
 
-```
-cd path\to\your\project   # Replace with the actual path to your project folder
+```bash
+cd path\to\your\project           			 # Replace with the actual path to the repository
 
-conda create -n replication-env python=3.9  # Replace 3.9 with your preferred Python version
+conda create -n replication-env python=3.9   # Replace 3.9 with your preferred Python version
 
 conda activate replication-env
 
 pip install -r requirements.txt
 ```
-If you are using VS Code, then select the kernel that is produced by the Conda environment (e.g., replication-env).
+
+### Next Step: Running the Notebook
+
+Once the virtual environment has been set up (using either VENV or Conda), you are ready to run the Jupyter Notebook that generates the dataset.
+
+1. Launch Jupyter Lab or Jupyter Notebook from within the activated environment:
+
+```bash
+jupyter lab
+# or
+jupyter notebook
+```
+
+2. Open [Notebooks/main.ipynb](Notebooks/main.ipynb).  
+
+3. Run all cells in the notebook. This will:
+
+- Read the input data from the [Input/](Input/) folder  
+- Apply the methodology described in [manual.pdf](manual.pdf)  
+- Generate the final dataset [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) in the [Output/](Output/) folder  
+
+In VS Code, you can also open `main.ipynb` directly and select the kernel corresponding to your virtual environment (either `.venv` or `replication-env`).
 
 ---
 ## References
 
-[^1]: See: *Jorgenson, D. W., Ho, M. S., Samuels, J. D., & Stiroh, K. J. (2007). Industry origins of the American productivity resurgence. Economic Systems Research, 19(3), 229–252.*
+## References
 
-[^2]: See: *Eldridge, L. P., Garner, C., Howells, T. F., Moyer, B. C., Russell, M., Samuels, J. D., Strassner, E. H., & Wasshausen, D. B. (2020). Toward a BEA–BLS integrated industry‑level production account for 1947–2016. In Measuring economic growth and productivity (pp. 221–249). Elsevier.*
+[^1]: *Jorgenson, D. W., Ho, M. S., Samuels, J. D., & Stiroh, K. J. (2007). Industry origins of the American productivity resurgence. Economic Systems Research, 19(3), 229–252.*  
 
-[^3]: See: *Garner, C., Harper, J., Russell, M., & Samuels, J. (2025). Integrated BEA–BLS industry‑level production account, 1997–2023: The sources of U.S. economic growth in the aftermath of the COVID‑19 recession (Technical report). Bureau of Economic Analysis & Bureau of Labor Statistics.*
+[^2]: *Eldridge, L. P., Garner, C., Howells, T. F., Moyer, B. C., Russell, M., Samuels, J. D., Strassner, E. H., & Wasshausen, D. B. (2020). Toward a BEA–BLS integrated industry-level production account for 1947–2016. In Measuring economic growth and productivity (pp. 221–249). Elsevier.*  
 
-[^4]: See: *Jorgenson, D. W., Ho, M. S., & Samuels, J. D. (2017). Educational attainment and the revival of US economic growth. In Education, Skills, and Technical Change: Implications for Future US GDP Growth (pp. 23–60). University of Chicago Press.*
+[^3]: *Garner, C., Harper, J., Russell, M., & Samuels, J. (2025). Integrated BEA–BLS industry-level production account, 1997–2023: The sources of U.S. economic growth in the aftermath of the COVID-19 recession (Technical report). Bureau of Economic Analysis & Bureau of Labor Statistics.*  
 
-[^5]: See: *Jorgenson, D. W., Ho, M. S., & Samuels, J. D. (2012) “A Prototype Industry‐Level Production Account for the United States, 1947‐2010,” Second World KLEMS Conference, Harvard University, August 9, 2012.*
+[^4]: *Jorgenson, D. W., Ho, M. S., & Samuels, J. D. (2017). Educational attainment and the revival of US economic growth. In Education, Skills, and Technical Change: Implications for Future US GDP Growth (pp. 23–60). University of Chicago Press.*  
+
+[^5]: *Jorgenson, D. W., Ho, M. S., & Samuels, J. D. (2012). A prototype industry-level production account for the United States, 1947-2010. Paper presented at the Second World KLEMS Conference, Harvard University, August 9, 2012.*
+
