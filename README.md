@@ -115,8 +115,6 @@ In VS Code, you can also open `main.ipynb` directly and select the kernel corres
 ---
 ## References
 
-## References
-
 [^1]: *Jorgenson, D. W., Ho, M. S., Samuels, J. D., & Stiroh, K. J. (2007). Industry origins of the American productivity resurgence. Economic Systems Research, 19(3), 229–252.*  
 
 [^2]: *Eldridge, L. P., Garner, C., Howells, T. F., Moyer, B. C., Russell, M., Samuels, J. D., Strassner, E. H., & Wasshausen, D. B. (2020). Toward a BEA–BLS integrated industry-level production account for 1947–2016. In Measuring economic growth and productivity (pp. 221–249). Elsevier.*  
