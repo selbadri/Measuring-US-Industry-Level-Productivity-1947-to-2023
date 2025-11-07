@@ -2,5 +2,8 @@ pandas
 numpy
 jupyter
 openpyxl
+matplotlib
+nbclient
+nbformat
 
 
