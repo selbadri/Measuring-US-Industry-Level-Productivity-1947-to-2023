@@ -114,7 +114,7 @@ jupyter notebook
 
 - Run [Notebooks/clean.ipynb](Notebooks/clean.ipynb) which reads input data from the [Input/](Input/) 
 - Run [Notebooks/analysis.ipynb](Notebooks/analysis.ipynb) which reads [clean_data.ipynb](Output/clean_data.xlsx) and applies the methodology in [manual.pdf](manual.pdf) to generate our final dataset [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) in the [Output/](Output/) folder  
-- Run [Notebooks/validate.ipynb](Notebooks/validate.ipynb) which produces charts that compare our dataset with other frequently used datasets locateed in [Input/](Input/).
+- Run [Notebooks/validate.ipynb](Notebooks/validate.ipynb) which produces charts that compare our dataset with other frequently used datasets located in [Input/](Input/).
 
 In VS Code, you can also open `run_all.ipynb` directly and select the kernel corresponding to your virtual environment (either `.venv` or `replication-env`).
 
