@@ -34,13 +34,13 @@ The repository contains the following folders:
 
 - **[Notebooks/](Notebooks/):** Contains the codes that produce and validate our dataset:
   - [clean.ipynb](Notebooks/clean.ipynb): Cleans, combines and standardizes all underlying data into one excel sheet.  
-  - [analysis.ipynb](Notebooks/analysis.ipynb): turns the cleaned data into our final dataset using the methodology in the [manual.pdf](manual.pdf).
+  - [analysis.ipynb](Notebooks/analysis.ipynb): Turns the cleaned data into our final dataset using the methodology in the [manual.pdf](manual.pdf).
   - [validate.ipynb](Notebooks/validate.ipynb): Compares our dataset to US KLEMS, April 2013 Release (see Jorgenson et al. (2012)[^4]) and the Penn World Tables v11.0 (see Feenstra et al. (2015)[^5]).
   - [run_all.ipynb](Notebooks/run_all.ipynb): A code  that runs [clean.ipynb](Notebooks/clean.ipynb), [analysis.ipynb](Notebooks/analysis.ipynb) and [validate.ipynb](Notebooks/validate.ipynb).
 
 - **[Output/](Output/):** Contains the product of the codes. Specifically:
   - [clean_data.xlsx](Output/clean_data.xlsx): The cleaned and standardized dataset that [clean.ipynb](Notebooks/clean.ipynb) produces.
-  - [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx): our final dataset.
+  - [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx): Our final dataset.
 
 Additional files include:
 
