@@ -16,7 +16,7 @@ The remainder of this README explains:
 
 The data and code are available for public use, provided that they are appropriately cited:
 
-Elbadri, Selim, and Juan I. Vizcaino (2025). *Measuring US Industry-Level Productivity Between 1947 and 2023* [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.17163103](https://doi.org/10.5281/zenodo.17163103). For BibTeX users, a [Citation file](EV_Citation.bib) is provided in the repository.
+Elbadri, Selim, and Juan I. Vizcaino (2025). *Measuring US Industry-Level Productivity Between 1947 and 2023* [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.17600449](https://doi.org/10.5281/zenodo.17600449). For BibTeX users, a [Citation file](EV_Citation.bib) is provided in the repository.
 
 This repository is open source and distributed under the MIT License. See the [LICENSE](LICENSE) file for the full text.
 
