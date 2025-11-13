@@ -29,17 +29,17 @@ The repository contains the following folders:
   - [usa_wk_mar_2017.xlsx](Input/usa_wk_mar_2017.xlsx): US KLEMS, March 2017 Release (see Jorgenson et al. (2017)[^1]).  
   - [industry-production-account-experimental.xlsx](Input/industry-production-account-experimental.xlsx): BEA–BLS Integrated Industry-Level Production Account for 1947–2016 (see Eldridge et al. (2020)[^2]).  
   - [industry-production-account-capital.xlsx](Input/industry-production-account-capital.xlsx): BEA–BLS Integrated Industry-Level Production Account (see Gerner et al. (2025)[^3]).
-  - [usa_wk_apr_2013.xlsx](Input/usa_wk_apr_2013.xlsx): US KLEMS, April 2013 Release (see Jorgenson et al. (2012)[^4])  
-  - [pwt110.xlsx](Input/pwt110.xlsx): Penn World Tables v11.0 (see Feenstra et al. (2015)[^5])
+  - [usa_wk_apr_2013.xlsx](Input/usa_wk_apr_2013.xlsx): US KLEMS, April 2013 Release (see Jorgenson et al. (2012)[^4]).  
+  - [pwt110.xlsx](Input/pwt110.xlsx): Penn World Tables v11.0 (see Feenstra et al. (2015)[^5]).
 
 - **[Notebooks/](Notebooks/):** Contains the codes that produce and validate our dataset:
   - [clean.ipynb](Notebooks/clean.ipynb): Cleans, combines and standardizes all underlying data into one excel sheet.  
-  - [analysis.ipynb](Notebooks/analysis.ipynb): turns the cleaned data into our final dataset using the methodology in the [manual.pdf](manual.pdf)
-  - [validate.ipynb](Notebooks/validate.ipynb): Compares our dataset to frequently used datasets such as US KLEMS, April 2013 Release (see Jorgenson et al. (2012)[^4]) and the Penn World Tables v11.0 (see Feenstra et al. (2015)[^5]).
+  - [analysis.ipynb](Notebooks/analysis.ipynb): turns the cleaned data into our final dataset using the methodology in the [manual.pdf](manual.pdf).
+  - [validate.ipynb](Notebooks/validate.ipynb): Compares our dataset to US KLEMS, April 2013 Release (see Jorgenson et al. (2012)[^4]) and the Penn World Tables v11.0 (see Feenstra et al. (2015)[^5]).
   - [run_all.ipynb](Notebooks/run_all.ipynb): A code  that runs [clean.ipynb](Notebooks/clean.ipynb), [analysis.ipynb](Notebooks/analysis.ipynb) and [validate.ipynb](Notebooks/validate.ipynb).
 
 - **[Output/](Output/):** Contains the product of the codes. Specifically:
-  - [clean_data.ipynb](Output/clean_data.xlsx): The cleaned and standardized dataset that [clean.ipynb](Notebooks/clean.ipynb) produces.
+  - [clean_data.xlsx](Output/clean_data.xlsx): The cleaned and standardized dataset that [clean.ipynb](Notebooks/clean.ipynb) produces.
   - [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx): our final dataset.
 
 Additional files include:
