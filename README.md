@@ -2,9 +2,9 @@
 
 ## Description
 
-We combine data from **US KLEMS (March 2017 Release)** [^1], the **BEA–BLS Integrated Industry-Level Production Accounts** for 1947–2016 [^2], and the **BEA–BLS Integrated Industry-Level Production Accounts** for 44 industries (1947–2023) and 63 industries (1963–2023) [^3]. From these sources, we construct industry-level measures of **Gross Output (GO)**, **Value Added (VA)**, **Capital (CAP)**, **Labor (LAB)**, and **Intermediate Inputs (II)**, in both nominal and real terms. We also provide quantity indices for **GO**, **VA**, **CAP**, **LAB**, and **II**, and compute measures of **Labor Productivity (LP)** and **Total Factor Productivity (TFP)** for the corresponding time periods, following the methodology in *US KLEMS, April 2013 Release* [^4]. Our dataset reflects the latest version of the [Industry Economic Accounts Data](https://www.bea.gov/industry/input-output-accounts-data) and can be updated annually to incorporate new BEA releases.
+We combine data from **US KLEMS (March 2017 Release)** [^1], the **BEA–BLS Integrated Industry-Level Production Accounts** for 1947–2016 [^2], and the **BEA–BLS Integrated Industry-Level Production Accounts** for 1997–2023 [^3]. We provide results for 44 industries from 1947 to 2023 and 63 industries from 1963 to 2023. Nominal values come from BEA–BLS from 1997 onward. Before 1997, KLEMS capital, labor, and intermediate inputs are linked to their 1997 BEA–BLS levels using industry- and component-specific ratios. Gross output is then constructed as **GO = CAP + LAB + II**, and value added as **VA = CAP + LAB**. Linking is performed at the detailed 63-industry level before constructing the 44-industry aggregates. We provide nominal measures and quantity indices for **Gross Output (GO)**, **Value Added (VA)**, **Capital (CAP)**, **Labor (LAB)**, and **Intermediate Inputs (II)**, together with measures of **Labor Productivity (LP)** and **Total Factor Productivity (TFP)**, following the methodology in *US KLEMS, April 2013 Release* [^4]. Our dataset reflects the latest version of the [Industry Economic Accounts Data](https://www.bea.gov/industry/input-output-accounts-data) and can be updated annually to incorporate new BEA releases.
 
-Users may download the final dataset, [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx), from the [Output/](Output/) folder. Alternatively, for users who wish to modify or update the data, or explore the methodology in more depth, we provide Python code in the form of a Jupyter Notebook. The notebook takes the underlying historical datasets as input and reproduces the final dataset using the documented methodology (see [manual.pdf](manual.pdf)).  
+Users may download the final dataset, [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx), from the [Output/](Output/) folder. Alternatively, for users who wish to modify or update the data, or explore the methodology in more depth, we provide Python code in the form of Jupyter notebooks. The notebooks take the underlying historical datasets as input and reproduce the final dataset using the documented methodology (see [manual.pdf](manual.pdf)).
 
 The remainder of this README explains:  
 - Attribution & licensing  
@@ -25,18 +25,18 @@ This repository is open source and distributed under the MIT License. See the [L
 
 The repository contains the following folders:
 
-- **[Input/](Input/):** Contains the three underlying data files needed to produce industry-level productivity measures (see [manual.pdf](manual.pdf) for full details and sources):
+- **[Input/](Input/):** Contains three source datasets used to construct the production accounts and two additional datasets used for validation (see [manual.pdf](manual.pdf) for full details and sources):
   - [usa_wk_mar_2017.xlsx](Input/usa_wk_mar_2017.xlsx): US KLEMS, March 2017 Release (see Jorgenson et al. (2017)[^1]).  
   - [industry-production-account-experimental.xlsx](Input/industry-production-account-experimental.xlsx): BEA–BLS Integrated Industry-Level Production Account for 1947–2016 (see Eldridge et al. (2020)[^2]).  
-  - [industry-production-account-capital.xlsx](Input/industry-production-account-capital.xlsx): BEA–BLS Integrated Industry-Level Production Account (see Gerner et al. (2025)[^3]).
-  - [usa_wk_apr_2013.xlsx](Input/usa_wk_apr_2013.xlsx): US KLEMS, April 2013 Release (see Jorgenson et al. (2012)[^4]).  
-  - [pwt110.xlsx](Input/pwt110.xlsx): Penn World Tables v11.0 (see Feenstra et al. (2015)[^5]).
+  - [industry-production-account-capital.xlsx](Input/industry-production-account-capital.xlsx): BEA–BLS Integrated Industry-Level Production Account (see Garner et al. (2025)[^3]).
+  - [usa_wk_apr_2013.xlsx](Input/usa_wk_apr_2013.xlsx): US KLEMS, April 2013 Release, used for validation (see Jorgenson et al. (2012)[^4]).
+  - [pwt110.xlsx](Input/pwt110.xlsx): Penn World Tables v11.0, used for validation (see Feenstra et al. (2015)[^5]).
 
 - **[Notebooks/](Notebooks/):** Contains the codes that produce and validate our dataset:
   - [clean.ipynb](Notebooks/clean.ipynb): Cleans, combines and standardizes all underlying data into one excel sheet.  
   - [analysis.ipynb](Notebooks/analysis.ipynb): Turns the cleaned data into our final dataset using the methodology in the [manual.pdf](manual.pdf).
   - [validate.ipynb](Notebooks/validate.ipynb): Compares our dataset to US KLEMS, April 2013 Release (see Jorgenson et al. (2012)[^4]) and the Penn World Tables v11.0 (see Feenstra et al. (2015)[^5]).
-  - [run_all.ipynb](Notebooks/run_all.ipynb): A code  that runs [clean.ipynb](Notebooks/clean.ipynb), [analysis.ipynb](Notebooks/analysis.ipynb) and [validate.ipynb](Notebooks/validate.ipynb).
+  - [run_all.ipynb](Notebooks/run_all.ipynb): Runs [clean.ipynb](Notebooks/clean.ipynb), [analysis.ipynb](Notebooks/analysis.ipynb), and [validate.ipynb](Notebooks/validate.ipynb).
 
 - **[Output/](Output/):** Contains the product of the codes. Specifically:
   - [clean_data.xlsx](Output/clean_data.xlsx): The cleaned and standardized dataset that [clean.ipynb](Notebooks/clean.ipynb) produces.
@@ -98,7 +98,7 @@ pip install -r requirements.txt
 
 ### Next Step: Running the Notebook
 
-Once the virtual environment has been set up (using either VENV or Conda), you are ready to run the Jupyter Notebooks that generates the dataset.
+Once the virtual environment has been set up (using either VENV or Conda), you are ready to run the Jupyter notebooks that generate the dataset.
 
 1. Launch Jupyter Lab or Jupyter Notebook from within the activated environment:
 
@@ -113,7 +113,7 @@ jupyter notebook
 3. Run all cells in the notebook. This will:
 
 - Run [Notebooks/clean.ipynb](Notebooks/clean.ipynb) which reads input data from the [Input/](Input/) 
-- Run [Notebooks/analysis.ipynb](Notebooks/analysis.ipynb) which reads [clean_data.ipynb](Output/clean_data.xlsx) and applies the methodology in [manual.pdf](manual.pdf) to generate our final dataset [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) in the [Output/](Output/) folder  
+- Run [Notebooks/analysis.ipynb](Notebooks/analysis.ipynb) which reads [clean_data.xlsx](Output/clean_data.xlsx) and applies the methodology in [manual.pdf](manual.pdf) to generate our final dataset [EV_production_accounts_1947to2023.xlsx](Output/EV_production_accounts_1947to2023.xlsx) in the [Output/](Output/) folder
 - Run [Notebooks/validate.ipynb](Notebooks/validate.ipynb) which produces charts that compare our dataset with other frequently used datasets located in [Input/](Input/).
 
 In VS Code, you can also open `run_all.ipynb` directly and select the kernel corresponding to your virtual environment (either `.venv` or `replication-env`).
